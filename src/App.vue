@@ -1,17 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <GeekJokes/>
+    <NormalJoke/>
+    <LoudJoke/>
+    <SnakeJoke/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import LoudJoke from '@/components/LoudJoke.vue';
+import SnakeJoke from '@/components/SnakeJoke.vue';
+import NormalJoke from '@/components/NormalJoke.vue';
+import GeekJokes from '@/components/GeekJokes.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    GeekJokes,
+    LoudJoke,
+    SnakeJoke,
+    NormalJoke,
   }
 }
 </script>
